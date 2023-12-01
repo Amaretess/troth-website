@@ -1,0 +1,32 @@
+.nav-link {
+  text-decoration: none;
+}
+
+.active {
+  color: #ddb254;
+}
+
+.modal-nav-item {
+  text-decoration: none;
+}
+
+.step-button {
+  border: 5px solid blue;
+}
+
+.icon2 {
+  font-size: 2rem;
+}
+
+.section-list {
+  display: flex;
+}
+
+.section-item {
+  list-style: circle;
+  font-size: 1.5rem;
+}
+
+.section {
+  width: 50%;
+}
