@@ -25,9 +25,9 @@ const Container = styled.div`
     height: 30vh;
     align-items: center;
     background-color: #f5f5f5;
-    line-height: 10px;
+    line-height: 15px;
     padding: 1rem;
-    @media (max-width: 650px) {
+    @media (max-width: 725px) {
         flex-wrap: wrap;
         line-height: 40px;
         text-align: center;
@@ -38,7 +38,10 @@ const Container = styled.div`
 
 const Title = styled.h1`
     font-size: 2.5rem;
-
+    flex-wrap: wrap;
+    @media (max-width: 600px) {
+        flex-wrap: wrap;
+    }
 
 `
 const Subtitle = styled.p`
