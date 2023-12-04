@@ -5,6 +5,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  width: 100vw;
   @media (max-width: 1250px) {
     flex-direction: column;
     flex-wrap: wrap;
@@ -14,13 +15,12 @@ export const Container = styled.div`
 
 export const TextContainer = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 30vw;
+  width: 100vw;
   @media (max-width: 1250px) {
     flex-wrap: wrap;
-    margin-left: -20rem;
   }
 `;
 
@@ -30,10 +30,8 @@ export const ImageContainer = styled.div`
 
 export const Img = styled.img`
   height: 60vh;
-  margin-left: 3rem;
   @media (max-width: 900px) {
     height: 40vh;
-    margin-right: 5rem;
   }
 `;
 
