@@ -24,7 +24,7 @@ const GroupPage = () => {
                 </ul>
             </Header>
             <SectionContainer>
-                <Section title="How does group insurance work?" description="Coverage through a small business or group health insurance plan can be more affordable than buying coverage by yourself. Here’s what you need to know:" image={image1}>
+                <Section title="How does group insurance work?" description="Coverage through a small business or group health insurance plan can be more affordable than buying coverage by yourself. Here’s what you need to know:" isOpen="true" image={image1}>
                     <ul>
                         <li>Generally, coverage is guaranteed</li>
                         <li>You must have at least one employee to qualify</li>
@@ -32,7 +32,7 @@ const GroupPage = () => {
                         <li>You can shop for coverage or replace an existing plan any time of the year</li>
                     </ul>
                 </Section>
-                <Section title="Don’t let small business health insurance confuse you! We can help." description="We advocate for you – If you need help dealing with your insurance company for claims or billing, we can help." image2={image2} >
+                <Section title="Don’t let small business health insurance confuse you! We can help." description="We advocate for you – If you need help dealing with your insurance company for claims or billing, we can help." isOpen2="true" image2={image2} >
                     <p>It’s about you and your needs – We empower you to find the best plan for your business.</p>
                 </Section>
             </SectionContainer >

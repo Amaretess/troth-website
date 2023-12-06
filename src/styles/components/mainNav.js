@@ -1,14 +1,5 @@
 import { styled } from "styled-components";
 
-export const Container = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  border-bottom: 1px solid #f2f2f2;
-`;
-
 export const LogoContainer = styled.div`
   margin: 1rem;
 `;

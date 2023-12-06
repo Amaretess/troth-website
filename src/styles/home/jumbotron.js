@@ -67,11 +67,9 @@ export const SubHeader2 = styled.p`
 
 export const MoreInfo = styled.div`
   display: flex;
-  width: 70vw;
-  flex-wrap: nowrap;
   justify-content: space-around;
   flex-direction: column;
-  @media (max-width: 1190px) {
+  @media (min-width: 1000px) {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;

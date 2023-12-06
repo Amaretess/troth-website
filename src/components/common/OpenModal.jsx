@@ -2,9 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
-const OpenModal = ({ close }) => {
+const OpenModal = ({ close, open }) => {
     return (
-        <Container>
+        <Container onClick={open}>
             <button onClick={close}>x</button>
             <Nav>
                 <NavItem >
@@ -38,9 +38,8 @@ export default OpenModal
 
 const Container = styled.div`
     padding: 1rem;
-    @media(min-width: 1253px) {
-        display: none;
-    }
+    flex-wrap: wrap;
+    width: 80vw;
 
 `
 const Nav = styled.ul`

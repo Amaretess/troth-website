@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Container, Nav, NavItem, Logo, LogoContainer, Button } from "../styles/components/mainNav";
+import { Nav, NavItem, Logo, LogoContainer, Button } from "../styles/components/mainNav";
 import logo from '../images/Troth-Co_Logo-V_Navy.png';
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -26,8 +26,8 @@ const MainNavigation = () => {
             <ToggleNav onClick={open}>
                 <AiOutlineMenu />
             </ToggleNav>
-            <Modal isOpen={isOpen}>
-                <OpenModal close={close} />
+            <Modal isOpen={isOpen} close={close}>
+                <OpenModal close={close} open={open} />
             </Modal>
             <Nav className="navbar">
                 <NavItem >
@@ -60,6 +60,17 @@ const MainNavigation = () => {
 }
 
 export default MainNavigation
+
+export const Container = styled.div`
+    display: flex;
+    top: 0;
+    background-color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+    border: 5px solid black;
+`;
 
 const ToggleNav = styled.button`
     display: flex;

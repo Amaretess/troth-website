@@ -1,22 +1,58 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
 
-const Modal = ({ isOpen, children }) => {
+const Modal = ({ isOpen, children, close }) => {
+    const slideDown = keyframes`
+    from {
+        transform: translateY(-50%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+`;
+
+
+    const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 350px;
+    background-color: white;
+    border: 1px solid black;
+    animation: ${slideDown} 0.3s ease-out; /* Adjust the duration and easing as needed */
+    z-index: 1;
+
+`;
+
     return (
         <>
             {isOpen && (
-                <Container>
-                    {children}
-                </Container>
+                <Background onClick={close}>
+                    <Container>
+                        {children}
+                    </Container>
+                </Background>
             )}
         </>
     )
 }
 
-export default Modal
+export default Modal;
 
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+const Background = styled.div`
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    @media(min-width: 1253px) {
+        display: none;
+    }
 `
+

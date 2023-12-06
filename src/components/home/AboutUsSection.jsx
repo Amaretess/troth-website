@@ -5,9 +5,9 @@ import logo from '../../images/aboutusdoggo.png';
 const AboutUsSection = () => {
     return (
         <Container>
-            <Logo>
-                <img src={logo} alt="logo" />
-            </Logo>
+            <LogoContainer >
+                <Logo src={logo} alt="logo" />
+            </LogoContainer >
             <Wrapper>
                 <h1>About Us</h1>
                 <Section>
@@ -40,10 +40,16 @@ const Container = styled.div`
     flex-wrap: wrap;
     
 `
-const Logo = styled.div`
-    
+const LogoContainer = styled.div`
+    width: 250px;
+    height: 250px;
 
 
+`
+
+const Logo = styled.img`
+    width: 100%;
+    height: 100%;
 `
 
 const Section = styled.div`
