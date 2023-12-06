@@ -43,7 +43,6 @@ const HomePage = () => {
 export default HomePage;
 
 const Container = styled.div`
-    border: 2px solid black;
 
 `
 

@@ -51,7 +51,10 @@ export default Section
 const TextContainer = styled.div`
         flex-wrap: wrap;
         display: flex;
-        max-width: 40%;
+        width: 40%;
+        @media (max-width: 500px) {
+            width: 60%;
+        }
         
 `
 const ImageContainer = styled.div`

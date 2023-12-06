@@ -39,9 +39,12 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     @media (min-width: 10px) {
         flex-direction: row;
+    }
+    @media (min-width: 1400px) {
+        justify-content: space-around;
     }
 
 `
@@ -64,9 +67,17 @@ const MoreInfo = styled.div`
 const ImageContainer = styled.div`
     height: 450px;
     width: 525px;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         height: 350px;
         width: 425px;
+    }
+    @media (min-width: 800px) {
+        height: 500px;
+        width: 600px;
+    }
+    @media (min-width: 1000px) {
+        height: 600px;
+        width: 700px;
     }
     
 `

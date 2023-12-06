@@ -69,7 +69,6 @@ export const Container = styled.div`
     flex-wrap: wrap;
     align-items: center;
     border-bottom: 1px solid #f2f2f2;
-    border: 5px solid black;
 `;
 
 const ToggleNav = styled.button`
