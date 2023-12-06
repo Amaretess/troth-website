@@ -22,7 +22,6 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 30vh;
     align-items: center;
     background-color: #f5f5f5;
     line-height: 15px;

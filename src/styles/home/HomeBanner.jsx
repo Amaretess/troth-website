@@ -46,7 +46,9 @@ const Container = styled.div`
 
 `
 const Header = styled.div`
-    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 `
 const MoreInfo = styled.div`
     display: flex;
@@ -75,13 +77,22 @@ const Image = styled.img`
 
 const Title = styled.h1`
     font-size: 30px;
+    @media (max-width: 500px) {
+        font-size: 20px
+    }
 `
 
 const Slogan = styled.h2`
     font-size: 50px;
+    @media (max-width: 500px) {
+        font-size: 40px
+    }
 
 `
 
 const Description = styled.p`
     font-size: 32px;
+    @media (max-width: 500px) {
+        font-size: 22px
+    }
 `

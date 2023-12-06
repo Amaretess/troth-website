@@ -31,7 +31,7 @@ const HomePage = () => {
                     <li className="section-item">Dental</li>
                 </ul>
             </Section>
-            <Section isOpen2="true" data={data2} className="section-2" title='Small Business & Group Health Insurance Plans' description='Group Insurance health plans provide coverage to a group of members, usually comprised of company employees or members of an organization.' image2={image2} alt="couple business"   >
+            <Section isOpen2="true" data={data2} className="section-2" title='Small Business & Group Health Insurance Plans' description='Group Insurance health plans provide coverage to a group of members, usually comprised of company employees or members of an organization.' image={image2} alt="couple business"   >
 
             </Section>
             <Banner />
