@@ -1,7 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 
-//reusable header
 const Header = ({ title, subtitle, tagline, image, children }) => {
     return (
         <Container>
@@ -27,60 +26,45 @@ export default Header
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    margin-left: 5rem;
     flex-wrap: wrap;
-    @media (max-width: 1100px) {
-        margin: 3rem;
-        margin-top: 1rem;
-    }
+
 `
 const TitleContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-self: flex-start;
     
     
 `
 const Title = styled.div`
-    font-size: 4rem;
+    font-size: 2rem;
 
 `
 
 const Image = styled.img`
-    height: 100%;
-    margin: auto;
-    max-width: 70vw;
-    position: relative;
-    object-fit: contain;
-    @media (max-width: 1100px) {
-        min-width: 90vw;
-        max-height: 50vh;
-        margin-right: 1rem;
-    }
+    width: 100%;
 `
 
 const ImageContainer = styled.div`
-    max-height: 45vh;
-    margin-bottom: 1rem;
-    @media (max-width: 1100px) {
-        display: flex;
-        justify-content: center;
-    }
+    width: 400px;
 `
 
 const HeaderBanner = styled.div`
     display: flex;
-    position: relative;
     justify-content: space-between;
-    height: 40vh;
+    border: 2px solid black;
     @media (max-width: 1100px) {
         flex-wrap: wrap;
-        height: 80vh;
+    }
+    @media (min-width: 500px) {
+        justify-content: space-around;
     }
 `
 
 const TextContainer = styled.div`
-    margin: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 `
 
 const Tagline = styled.h2`

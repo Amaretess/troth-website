@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from 'styled-components'
 
-const Section = ({ title, description, image, data, isOpen, isOpen2, isGray }) => {
+const Section = ({ title, description, image, children, isOpen, isOpen2, isGray }) => {
 
     const Container = styled.section`
     display: flex;
@@ -26,13 +26,7 @@ const Section = ({ title, description, image, data, isOpen, isOpen2, isGray }) =
             <TextContainer>
                 <Title>{title} </Title>
                 <Description>{description}</Description>
-                {data?.map(item => {
-                    return (
-                        <ul>
-                            <li>{item}</li>
-                        </ul>
-                    )
-                })}
+                {children}
             </TextContainer>
 
 

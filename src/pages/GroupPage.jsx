@@ -32,12 +32,12 @@ const GroupPage = () => {
                         <li>You can shop for coverage or replace an existing plan any time of the year</li>
                     </ul>
                 </Section>
-                <Section title="Don’t let small business health insurance confuse you! We can help." description="We advocate for you – If you need help dealing with your insurance company for claims or billing, we can help." isOpen2="true" image2={image2} >
+                <Section title="Don’t let small business health insurance confuse you! We can help." description="We advocate for you – If you need help dealing with your insurance company for claims or billing, we can help." isOpen2="true" image={image2} >
                     <p>It’s about you and your needs – We empower you to find the best plan for your business.</p>
                 </Section>
             </SectionContainer >
 
-            <Section title="Ready to get started with a group plan? " description="Hassel Free! Let us shop for you, and get a no-obligation, comparison quote from the top carriers." image={image3}>
+            <Section title="Ready to get started with a group plan? " description="Hassel Free! Let us shop for you, and get a no-obligation, comparison quote from the top carriers." image={image3} isOpen="true">
                 <Steps>
                     <Step><strong>Step 1:</strong> Download the Group Consensus Form, complete and save to your computer.</Step>
                     <Button>Census Form</Button>
@@ -55,7 +55,7 @@ const GroupPage = () => {
 export default GroupPage
 
 const Container = styled.div`
-    
+    border: 2px solid black;
 `
 
 const SectionContainer = styled.div`
@@ -67,5 +67,4 @@ const Steps = styled.ul`
 `
 
 const Step = styled.li`
-    margin: 1rem;
 `

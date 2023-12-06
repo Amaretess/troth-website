@@ -6,7 +6,7 @@ export const LogoContainer = styled.div`
 
 export const Logo = styled.img`
   margin-left: 5rem;
-  height: 80px;
+  height: 70px;
   @media (max-width: 1253px) {
     height: 60px;
   }
@@ -22,7 +22,7 @@ export const Nav = styled.ul`
 export const NavItem = styled.li`
   margin: 1rem;
   list-style: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   @media (max-width: 1173px) {
     font-size: 20px;

@@ -59,7 +59,6 @@ const FormContainer = styled.div`
 const TheForm = styled.form`
     display: flex;
     flex-direction: column;
-    width: 70vw;
 `
 
 const Input = styled.input`

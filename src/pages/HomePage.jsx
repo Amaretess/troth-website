@@ -9,20 +9,11 @@ import image2 from '../images/groupben.jpeg';
 import styled from 'styled-components';
 
 const HomePage = () => {
-    const data = ["Medicare advantage", "Medicare Supplements", "Drug Plans", "Vision", "Dental"]
-
-    const data2 = [
-        'medical',
-        'dental',
-        'disablity coverage',
-        'life insurance',
-        'complimentary identity protection'
-    ]
 
     return (
         <Container>
             <HomeBanner />
-            <Section isGray="true" isOpen="true" data={data} p="We can help anyone located in AK, AZ, CA, DC, FL, ID, MT, NC, NJ, OR, PA, TX, and WA" title='Medicare' description='Medicare plans can cover physicians, hospitalization, and prescription drug coverage in one simple plan.' image={image} alt='surfer dude' backgroundColor="gray">
+            <Section isGray="true" isOpen="true" p="We can help anyone located in AK, AZ, CA, DC, FL, ID, MT, NC, NJ, OR, PA, TX, and WA" title='Medicare' description='Medicare plans can cover physicians, hospitalization, and prescription drug coverage in one simple plan.' image={image} alt='surfer dude' backgroundColor="gray">
                 <ul className="section">
                     <li className="section-item">Medicare advantage plans</li>
                     <li className="section-item">Medicare supplements</li>
@@ -31,8 +22,14 @@ const HomePage = () => {
                     <li className="section-item">Dental</li>
                 </ul>
             </Section>
-            <Section isOpen2="true" data={data2} className="section-2" title='Small Business & Group Health Insurance Plans' description='Group Insurance health plans provide coverage to a group of members, usually comprised of company employees or members of an organization.' image={image2} alt="couple business"   >
-
+            <Section isOpen2="true" className="section-2" title='Small Business & Group Health Insurance Plans' description='Group Insurance health plans provide coverage to a group of members, usually comprised of company employees or members of an organization.' image={image2} alt="couple business"   >
+                <ul>
+                    <li>medical</li>
+                    <li>dental</li>
+                    <li>disability coverage</li>
+                    <li>life insurance</li>
+                    <li>complimentary identity protection</li>
+                </ul>
             </Section>
             <Banner />
             <AboutUsSection />
