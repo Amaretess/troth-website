@@ -6,8 +6,8 @@ import { BsPhone } from "react-icons/bs";
 import { RiCustomerServiceLine } from "react-icons/ri";
 
 const HomeBanner = () => {
-    return <Container>
-        <Header>
+    return <Header>
+        <Container>
             <Title>Welcome to Troth & Co</Title>
             <Slogan>HEALTHIER TOGETHER</Slogan>
             <Description>Are you ready to give your healthcare plan a check up?</Description>
@@ -23,17 +23,17 @@ const HomeBanner = () => {
                     <p>Request a call with one of our representatives.</p>
                 </Sub>
             </MoreInfo>
-        </Header>
+        </Container>
         <ImageContainer>
             <Image src={image} />
         </ImageContainer>
 
-    </Container>;
+    </Header>;
 }
 
 export default HomeBanner;
 
-const Container = styled.div`
+const Header = styled.header`
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -48,10 +48,11 @@ const Container = styled.div`
     }
 
 `
-const Header = styled.div`
+const Container = styled.div`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 1rem;
 `
 const MoreInfo = styled.div`
     display: flex;

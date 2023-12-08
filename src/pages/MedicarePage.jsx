@@ -9,28 +9,28 @@ import DisplayButtons from '../components/medicare/DisplayButtons';
 const MedicarePage = () => {
     return (
         <Container>
-            <Header title="Plans to Fit Your Lifestyle" tagline="Medicare" subtitle="Medicare plans can cover doctors and hospitalization in one simple plan." image={image}>
+            <Header title="Plans to Fit Your Lifestyle" tagline="Medicare" image={image}>
                 <Content>
                     <div>
-                        <ul>
+                        <h3>Medicare plans can cover doctors and hospitalization in one simple plan</h3>
+                        <List>
                             <li>Medicare</li>
                             <li>Medicare supplements</li>
                             <li>Drug Plans</li>
                             <li>Vision</li>
                             <li>Dental</li>
-                        </ul>
+                        </List>
                     </div>
                     <div>
                         <h3>Plans also include:</h3>
-                        <ul>
+                        <List>
                             <li>Hearing Aids</li>
                             <li>Fitness Membership</li>
                             <li>Allowance for over-the-counter (OTC) products</li>
                             <li>Telehealth coverage</li>
                             <li>Meals after hospital stay</li>
                             <li>Naturopathic/Chiropractic/Acupuncture care</li>
-                        </ul>
-                        <i>We do not offer every plan available in your area.  Any information we provide is limited to those plans we do offer in your area.  Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options.</i>
+                        </List>
                     </div>
                 </Content>
             </Header>
@@ -52,5 +52,16 @@ const Container = styled.div`
 
 const Content = styled.div`
     display: flex;
+    justify-content: space-evenly;
+    border: 2px solid black;
+`
+
+const List = styled.ul`
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    width: 300px;
+    border: 2px solid red;
 `

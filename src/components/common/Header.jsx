@@ -27,6 +27,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100vw;
 
 `
 const TitleContainer = styled.div`
@@ -52,19 +53,18 @@ const ImageContainer = styled.div`
 const HeaderBanner = styled.div`
     display: flex;
     justify-content: space-between;
-    border: 2px solid black;
     @media (max-width: 1100px) {
         flex-wrap: wrap;
     }
     @media (min-width: 500px) {
-        justify-content: space-around;
+        justify-content: space-between;
     }
 `
 
 const TextContainer = styled.div`
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
 `
 
 const Tagline = styled.h2`

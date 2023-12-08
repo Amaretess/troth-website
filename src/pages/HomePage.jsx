@@ -13,16 +13,16 @@ const HomePage = () => {
     return (
         <Container>
             <HomeBanner />
-            <Section isGray="true" isOpen="true" p="We can help anyone located in AK, AZ, CA, DC, FL, ID, MT, NC, NJ, OR, PA, TX, and WA" title='Medicare' description='Medicare plans can cover physicians, hospitalization, and prescription drug coverage in one simple plan.' image={image} alt='surfer dude' backgroundColor="gray">
-                <ul className="section">
+            <Section isGray={true} isOpen={true} p="We can help anyone located in AK, AZ, CA, DC, FL, ID, MT, NC, NJ, OR, PA, TX, and WA" title='Medicare' description='Medicare plans can cover physicians, hospitalization, and prescription drug coverage in one simple plan.' image={image} alt='surfer dude' backgroundColor="gray">
+                <List className="section">
                     <li className="section-item">Medicare advantage plans</li>
                     <li className="section-item">Medicare supplements</li>
                     <li className="section-item">Drug Plans</li>
                     <li className="section-item">Vision</li>
                     <li className="section-item">Dental</li>
-                </ul>
+                </List>
             </Section>
-            <Section isOpen2="true" className="section-2" title='Small Business & Group Health Insurance Plans' description='Group Insurance health plans provide coverage to a group of members, usually comprised of company employees or members of an organization.' image={image2} alt="couple business"   >
+            <Section isRight={true} className="section-2" title='Small Business & Group Health Insurance Plans' description='Group Insurance health plans provide coverage to a group of members, usually comprised of company employees or members of an organization.' image={image2} alt="couple business"   >
                 <ul>
                     <li>medical</li>
                     <li>dental</li>
@@ -41,5 +41,8 @@ export default HomePage;
 
 const Container = styled.div`
 
+`
+
+const List = styled.ul`
 `
 

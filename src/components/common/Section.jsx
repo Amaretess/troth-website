@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from 'styled-components'
 
-const Section = ({ title, description, image, children, isOpen, isOpen2, isGray }) => {
+const Section = ({ title, description, image, children, isOpen, isOpen2, isGray, isRight, }) => {
 
     const Container = styled.section`
     display: flex;
@@ -32,9 +32,16 @@ const Section = ({ title, description, image, children, isOpen, isOpen2, isGray 
 
             {isOpen2 && (
                 <ImageContainer2>
+                    <Image2 src={image} />
+                </ImageContainer2>
+            )}
+
+            {isRight && (
+                <ImageContainer2>
                     <Image src={image} />
                 </ImageContainer2>
             )}
+
         </Container>
     )
 }
@@ -45,9 +52,9 @@ export default Section
 const TextContainer = styled.div`
         flex-wrap: wrap;
         display: flex;
-        width: 40%;
-        @media (max-width: 500px) {
-            width: 60%;
+        width: 60%;
+        @media (max-width: 900px) {
+            width: 80%;
         }
         
 `
@@ -77,6 +84,18 @@ const Image = styled.img`
     @media (max-width: 500px) {
         width: 300px;
         height: 350px;
+    }
+`
+const Image2 = styled.img`
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    @media (max-width: 900px) {
+        width: 475px;
+    }
+    @media (max-width: 500px) {
+        width: 400px;
+        height: 250px;
     }
 `
 
