@@ -21,10 +21,15 @@ const Modal = ({ isOpen, children, close }) => {
     transform: translateX(-50%);
     width: 700px;
     height: 350px;
+    margin-left: 1rem;
     background-color: white;
     border: 1px solid black;
     animation: ${slideDown} 0.3s ease-out; /* Adjust the duration and easing as needed */
     z-index: 1;
+    @media (max-width: 500px) {
+        width: 350px;
+        height: 400px;
+    }
 
 `;
 

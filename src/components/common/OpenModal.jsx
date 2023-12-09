@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const OpenModal = ({ close, open }) => {
     return (
         <Container onClick={open}>
-            <button onClick={close}>x</button>
+            <CloseModal onClick={close}>x</CloseModal>
             <Nav>
                 <NavItem >
                     <NavLink onClick={close} to="/" >Home</NavLink>
@@ -37,16 +37,26 @@ export default OpenModal
 
 
 const Container = styled.div`
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
-    width: 80vw;
 
 `
+const CloseModal = styled.button`
+    align-self: flex-start;
+    margin-top: 1rem;
+`
+
 const Nav = styled.ul`
     list-style: none;
+    width: 80%;
 `
 
 const NavItem = styled.li`
-    margin: 1rem;
+    margin: 1.3rem;
+    border-bottom: 1px solid #f7f7f7;
+    font-weight: bold;
     
 `
