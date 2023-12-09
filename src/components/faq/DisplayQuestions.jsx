@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 const DisplayQuestions = () => {
 
-    const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(1);
 
     return (
         <Container>

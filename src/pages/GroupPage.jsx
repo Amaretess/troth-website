@@ -13,18 +13,18 @@ import GroupForm from '../components/group/GroupForm';
 const GroupPage = () => {
     return (
         <Container>
-            <Header title="Small Business Health Insurance Plans and Group Benefits" subtitle="It’s about you and your needs – We empower you to find the best plan for your business at every stage." image={image} >
-                <ul>
-                    <li>Medical</li>
-                    <li>Dental</li>
-                    <li>Vision</li>
-                    <li>Disability Coverage</li>
-                    <li>Life Insurance</li>
-                    <li>Complimentary Identity Protection</li>
-                </ul>
+            <Header title="Small Business Health Insurance Plans and Group Benefits" subtitle="It’s about you and your needs – We empower you to find the best plan for your business at every stage." image={image}>
+                <List>
+                    <ListItem>Medical</ListItem>
+                    <ListItem>Dental</ListItem>
+                    <ListItem>Vision</ListItem>
+                    <ListItem>Disability Coverage</ListItem>
+                    <ListItem>Life Insurance</ListItem>
+                    <ListItem>Complimentary Identity Protection</ListItem>
+                </List>
             </Header>
             <SectionContainer>
-                <Section title="How does group insurance work?" description="Coverage through a small business or group health insurance plan can be more affordable than buying coverage by yourself. Here’s what you need to know:" image={image1} isOpen2={true}>
+                <Section title="How does group insurance work?" description="Coverage through a small business or group health insurance plan can be more affordable than buying coverage by yourself. Here’s what you need to know:" image={image1} wideImage={true} isOpen={true}>
                     <ul>
                         <li>Generally, coverage is guaranteed</li>
                         <li>You must have at least one employee to qualify</li>
@@ -32,11 +32,11 @@ const GroupPage = () => {
                         <li>You can shop for coverage or replace an existing plan any time of the year</li>
                     </ul>
                 </Section>
-                <Section title="Don’t let small business health insurance confuse you! We can help." description="We advocate for you – If you need help dealing with your insurance company for claims or billing, we can help." image={image2} isOpen2={true}>
+                <Section title="Don’t let small business health insurance confuse you! We can help." description="We advocate for you – If you need help dealing with your insurance company for claims or billing, we can help." image={image2} isRight={true} wideImage={true}>
                     <p>It’s about you and your needs – We empower you to find the best plan for your business.</p>
                 </Section>
             </SectionContainer >
-            <Section title="Ready to get started with a group plan? " description="Hassel Free! Let us shop for you, and get a no-obligation, comparison quote from the top carriers." image={image3} isOpen2={true}>
+            <Section title="Ready to get started with a group plan? " description="Hassel Free! Let us shop for you, and get a no-obligation, comparison quote from the top carriers." isOpen={true} image={image3} wideImage={true}>
                 <Steps>
                     <Step><strong>Step 1:</strong> Download the Group Consensus Form, complete and save to your computer.</Step>
                     <Button>Census Form</Button>
@@ -66,4 +66,21 @@ const Steps = styled.ul`
 `
 
 const Step = styled.li`
+`
+
+const List = styled.ul`
+    list-style: none;
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    @media (max-width: 880px) {
+        width: 80%;
+    }
+    @media (max-width: 680px) {
+        width: 90%;
+    }
+
+`
+const ListItem = styled.li`
+    margin: 1rem;
 `

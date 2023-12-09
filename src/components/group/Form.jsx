@@ -53,12 +53,17 @@ export default Form
 const FormContainer = styled.div`
     display: flex;
     justify-content: center;
+    width: 100vw;
     
 `
 
 const TheForm = styled.form`
     display: flex;
     flex-direction: column;
+    width: 600px;
+    @media (max-width: 900px) {
+        width: 300px;
+    }
 `
 
 const Input = styled.input`
@@ -67,13 +72,11 @@ const Input = styled.input`
 `
 
 const MessageBox = styled.textarea`
-    height: 20vh;
     padding: 1rem;
     margin: 1rem;
 
 `
 const Submit = styled.input`
-    width: 50%;
     padding: 1.5rem;
 `
 const SubmitContainer = styled.div`

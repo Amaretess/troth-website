@@ -13,7 +13,7 @@ const HomePage = () => {
     return (
         <Container>
             <HomeBanner />
-            <Section isGray={true} isOpen={true} p="We can help anyone located in AK, AZ, CA, DC, FL, ID, MT, NC, NJ, OR, PA, TX, and WA" title='Medicare' description='Medicare plans can cover physicians, hospitalization, and prescription drug coverage in one simple plan.' image={image} alt='surfer dude' backgroundColor="gray">
+            <Section isGray={true} isOpen={true} p="We can help anyone located in AK, AZ, CA, DC, FL, ID, MT, NC, NJ, OR, PA, TX, and WA" title='Medicare' description='Medicare plans can cover physicians, hospitalization, and prescription drug coverage in one simple plan.' image={image} alt='surfer dude' >
                 <List className="section">
                     <li className="section-item">Medicare advantage plans</li>
                     <li className="section-item">Medicare supplements</li>

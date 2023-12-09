@@ -38,8 +38,9 @@ const Container = styled.div`
 const Title = styled.h1`
     font-size: 2.5rem;
     flex-wrap: wrap;
-    @media (max-width: 600px) {
+    @media (max-width: 500px) {
         flex-wrap: wrap;
+        width: 250px;
     }
 
 `

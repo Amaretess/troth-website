@@ -38,6 +38,7 @@ const Header = styled.header`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     justify-content: center;
     @media (min-width: 10px) {
@@ -53,6 +54,9 @@ const Container = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
     margin: 1rem;
+    @media (max-width: 600px) {
+        width: 300px;
+    }
 `
 const MoreInfo = styled.div`
     display: flex;
@@ -68,9 +72,9 @@ const MoreInfo = styled.div`
 const ImageContainer = styled.div`
     height: 450px;
     width: 525px;
-    @media (max-width: 800px) {
-        height: 350px;
-        width: 425px;
+    @media (max-width: 900px) {
+        height: 250px;
+        width: 325px;
     }
     @media (min-width: 800px) {
         height: 500px;
