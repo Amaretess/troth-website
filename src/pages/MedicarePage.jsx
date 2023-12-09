@@ -11,27 +11,28 @@ const MedicarePage = () => {
         <Container>
             <Header title="Plans to Fit Your Lifestyle" tagline="Medicare" image={image}>
                 <Content>
-                    <div>
-                        <h3>Medicare plans can cover doctors and hospitalization in one simple plan</h3>
+                    <RedBox>
+                        <h2>Medicare plans can cover doctors and hospitalization in one simple plan</h2>
                         <List>
-                            <li>Medicare</li>
-                            <li>Medicare supplements</li>
-                            <li>Drug Plans</li>
-                            <li>Vision</li>
-                            <li>Dental</li>
+                            <Item>Medicare</Item>
+                            <Item>Medicare supplements</Item>
+                            <Item>Drug Plans</Item>
+                            <Item>Vision</Item>
+                            <Item>Dental</Item>
                         </List>
-                    </div>
-                    <div>
-                        <h3>Plans also include:</h3>
+                    </RedBox>
+                    <RedBox>
+                        <h2>Plans also include:</h2>
                         <List>
-                            <li>Hearing Aids</li>
-                            <li>Fitness Membership</li>
-                            <li>Allowance for over-the-counter (OTC) products</li>
-                            <li>Telehealth coverage</li>
-                            <li>Meals after hospital stay</li>
-                            <li>Naturopathic/Chiropractic/Acupuncture care</li>
+                            <Item>Hearing Aids</Item>
+                            <Item>Fitness Membership</Item>
+                            <Item>Allowance for over-the-counter (OTC) products</Item>
+                            <Item>Telehealth coverage</Item>
+                            <Item>Meals after hospital stay</Item>
+                            <Item>Naturopathic/Chiropractic</Item>
+                            <Item>Acupuncture</Item>
                         </List>
-                    </div>
+                    </RedBox>
                 </Content>
             </Header>
             <Banner image={bannerimage} title='Service Areas' description="Customized Medicare planning at no cost to you offered in AK, AZ, CA, DC, FL, ID, IL, MT, NC, NJ, OR, PA, TX, and WA." />
@@ -50,18 +51,35 @@ const Container = styled.div`
 
 `
 
+const RedBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+`
+
 const Content = styled.div`
     display: flex;
-    justify-content: space-evenly;
-    border: 2px solid black;
+    width: 100vw;
+    justify-content: center;
+    flex-wrap: wrap;
 `
 
 const List = styled.ul`
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
-    width: 300px;
-    border: 2px solid red;
+    @media (max-width: 500px) {
+        width: 150px;
+    }
+    padding: 1rem;
+`
+const Item = styled.li`
+    margin: 1rem;
+    font-weight: bold;
+    flex-wrap: wrap;
+    border: 1px solid #f7f7f7;
 `

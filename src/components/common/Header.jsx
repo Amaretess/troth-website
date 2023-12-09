@@ -34,6 +34,7 @@ const TitleContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-self: flex-start;
+    margin: 1rem;
     
     
 `
@@ -44,10 +45,11 @@ const Title = styled.div`
 
 const Image = styled.img`
     width: 100%;
+    height: 350px;
 `
 
 const ImageContainer = styled.div`
-    width: 400px;
+    display: flex;
 `
 
 const HeaderBanner = styled.div`
